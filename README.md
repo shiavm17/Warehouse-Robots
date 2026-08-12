@@ -132,18 +132,19 @@ These can be visualized with `robot_state_publisher` and `rviz2`, or loaded into
 
 ## Images
 
-Add your image files to the `images/` folder, then update the links below (or add new ones) so they render here on GitHub.
+Simulation screenshots from Gazebo, showing the warehouse environment, shelving layout, and robot navigation/SLAM in action.
 
 | Preview | Description |
 |---|---|
-| ![Warehouse Swarm Diagram](images/warehouse_swarm_diagram.png) | Swarm architecture / coordination diagram |
-| ![Mobile Manipulator](images/mobile_manipulator.png) | Mobile manipulator robot model |
-| ![Robot Arm](images/arm.png) | Robot arm model |
-| ![Simulation Screenshot](images/simulation.png) | Simulation environment screenshot |
+| ![Warehouse overview](images/Warehouse1.png) | Top-down view of the warehouse floor with shelving racks, aisle markings, and the robot's local costmap/footprint visible at the center. |
+| ![Warehouse aisle layout](images/Warehouse2.png) | Angled view of the shelving aisles and pickup/drop-off zones (green and orange marked areas). |
+| ![Warehouse aisle layout — alternate view](images/Warehouse3.png) | Another perspective of the warehouse layout, showing shelf spacing and the robot's sensor sweep. |
+| ![Cartographer SLAM run](images/Warehouse4.png) | ROS 2 terminal output alongside Gazebo, showing a Cartographer SLAM session building the map (`use_map.pgm` / `use_map.yaml`) from the TurtleBot3 workspace. |
+| ![Warehouse simulation — full view](images/Warehouse5.png) | Full warehouse simulation view with shelves, navigation zones, and the robot positioned at the center aisle intersection. |
 
-> Until an image is added at the given path, GitHub will show a broken image icon — replace the filename with your actual image, or remove the row.
+To use them, save the five images into the `images/` folder using the filenames above (`Warehouse1.png` … `Warehouse5.png`), then commit them along with this README so the links resolve on GitHub.
 
-### Adding a new image
+### Adding more images
 
 1. Drop the image file into the `images/` folder (e.g. `images/my_diagram.png`).
 2. Reference it anywhere in this README using standard Markdown syntax:
